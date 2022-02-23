@@ -33,14 +33,30 @@ import org.friendsbalt.cs.zoo.Animal;
 */
 public class Deer extends Animal {
     
+    /**
+    * Constructs a deer of given Color. By default, the Deer is male
+    * and weighs 10 pounds.
+    * @param x the Color of the Deer.
+    */
     public Deer(Color x) {
         super(10, x, false);
     }
     
+    /**
+    * Constructs a deer of a given weight, color and gender.
+    * @param weight The weight of the Deer in pounds.
+    * @param color The fur color of the Deer.
+    * @param isMale The gender of the Deer ({@code true} for Male and
+    * {@code false} if female.
+    */
     public Deer(int weight, Color color, boolean isMale) {
         super(weight, color, isMale);
     }
     
+    
+    /**
+    * Causes the given deer to speak using it's species-specific sound
+    */
     @Override
     public void speak() {
         System.out.println("Deer sounds!");
