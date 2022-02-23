@@ -40,11 +40,4 @@ public class Zoo {
         return new Animal(weight, newColor, isMale);
     }
     */
-    
-    /*Correct solution. Still kind of a weird mess.Needs
-    * Needs both generic type and an interface...
-    */
-    public <T extends Mateable<T>> T mate(T a, T b) {
-        return a.mateWith(b);
-    }
 }

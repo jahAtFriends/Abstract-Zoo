@@ -77,7 +77,7 @@ public abstract class Animal {
     * @return A boolean representation of the gender {@code true} if
     * male and {@code false} if female.
     */
-    public boolean isMale() {
+    public final boolean isMale() {
         return this.isMale;
     }
     
@@ -87,7 +87,7 @@ public abstract class Animal {
     * male.
     * @see isMale()
     */
-    public boolean isFemale() {
+    public final boolean isFemale() {
         return !this.isMale;
     }
     
@@ -98,4 +98,5 @@ public abstract class Animal {
     * sound to StdOut (the command line, usually).
     */
     public abstract void speak();
+    
 }
